@@ -1,0 +1,6 @@
+{
+    "beautify.beautifyOnClose":  [
+        "directory/**/beautify",
+        "!directory/**/not/beautify",
+        "!**/*.min.js" ]
+}
