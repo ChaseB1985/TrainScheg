@@ -4,24 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Train Scheduler</title>
-	<!-- bootstrap css -->
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
 	    crossorigin="anonymous">
-
-
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
 	    crossorigin="anonymous" defer></script>
-
 	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 </head>
 
-<body>
+<body class="p-3 mb-2 bg-success text-white">
 	<div class="container">
-		<div class="jumbotron text-center" style="background-color: none; color: none">
-			<h1>All Aboard...</h1>
+		<img src="images/twotrains.jpg" class="img-rounded" alt="twotrains" width="1110" height="236">
+		<div class="jumbotron text-center" style="background-color: none; color: black">
+			<h1>Add Train Information, Get Results</h1>
 			<hr>
 			<h2>Current Time:
 				<span id="currentTime"></span>
@@ -36,7 +34,9 @@
 						<h3 class="panel-title">Current Train Schedule</h3>
 					</div>
 					<div class="panel-body">
-						<table class="table table-hover table-responsive" id="trainTable" style="background-color: none !important; color: none">
+							<img src="images/bluetrain.jpg" class="img-rounded" 
+							alt="blueTrain" width="750" height="236">
+						<table class="table table-hover table-responsive" id="trainTable">
 							<thead>
 								<tr>
 									<th>Train Name</th>
@@ -66,20 +66,20 @@
 						<form>
 							<div class="form-group">
 								<label for="name">Train Name </label>
-								<input type="text" class="form-control" id="nameInput" placeholder="Runaway Train">
+								<input type="text" class="form-control" id="nameInput">
 							</div>
 							<div class="form-group">
 								<label for="dest">Destination </label>
-								<input type="text" class="form-control" id="destInput" placeholder="Alaska">
+								<input type="text" class="form-control" id="destInput">
 							</div>
 							<div class="form-group">
 								<label class="nextTrain" for="nextTrain">First Train Time</label>
 								<label class="milTime">&nbsp;(HH:mm - Military)</label>
-								<input type="" class="form-control" id="timeInput" placeholder="00:00">
+								<input type="" class="form-control" id="timeInput">
 							</div>
 							<div class="form-group">
 								<label for="minsAway">Frequency - (mins) </label>
-								<input type="text" class="form-control" id="freqInput" placeholder="15">
+								<input type="text" class="form-control" id="freqInput">
 							</div>
 
 							<button type="submit" class="btn btn-default" id="submit">Add Train</button>
@@ -97,7 +97,7 @@
 
 	</div>
 	<!-- Container End -->
-	<script src="assets/train2.js"></script>
+	<script src="assets/train.js"></script>
 </body>
 
 </html>
