@@ -1,4 +1,4 @@
-![image](/image/trainScreen.png)
+![image](./images/trainScreen.png)
 
 ##What the project does:
 
