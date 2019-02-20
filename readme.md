@@ -1,4 +1,4 @@
-![image](images\trainScreen.PNG)
+![trainscreen](https://user-images.githubusercontent.com/37719344/53108550-d9ae6a00-34fc-11e9-82b2-574f28177dd0.PNG)
 
 ##What the project does:
 
